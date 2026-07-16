@@ -1,27 +1,10 @@
-# 關鍵字評分 — Zoro / WebSearch 兩條 branch
+# 關鍵字評分
 
-`topic-picker` Step 2 的 disclosed reference（與 title-brainstorm 共用同一套機制）。每個候選關鍵字要三個分：
-**熱門度**（搜尋需求）、**競爭度**（多飽和／多難排）、**機會分 opportunity**
-（＝熱門度高 × 競爭度低，且**對得上「你能教」那份清單**——對不上的字，機會分一律壓低：搜尋量再大，你站不上去就不是你的機會）。
+topic-picker 步驟 2 的評分方法。每個候選關鍵字要三個分：
+**熱門度**（搜尋需求）、**競爭度**（多飽和／多難排）、**機會分**（＝熱門度高 × 競爭度低 × 對得上「你能教」——對不上的字一律壓低：搜尋量再大，你站不上去就不是你的機會）。
 
-## Branch A — Zoro（在 nakama repo 環境，`agents/zoro` import 得到）
-
-分數直接來自 Zoro，不用自己估：
-
-```bash
-# repo 根目錄跑
-python -c "from agents.zoro.keyword_research import research_keywords; import json; \
-print(json.dumps(research_keywords('<主題>', content_type='youtube'), ensure_ascii=False))"
-```
-
-`keywords[]` 每個含：`search_volume`→熱門度、`competition`→競爭度、`opportunity`→機會分、`reason`→理由。
-另有 `trend_gaps`（低競爭缺口，優先卡位）、`youtube_titles`（可留給 title-brainstorm 當種子）。
-相依 httpx / trendspy；`YOUTUBE_API_KEY` 選配；內部呼叫 Claude 合成（**有成本**）。
-
-## Branch B — WebSearch（獨立環境／沒有 repo；live demo 建議走這條）
-
-沒有 volume 數字，用可觀察訊號打分，**每個分附你用的訊號當理由**。
-訊號判讀以**繁中（台灣語境）結果為準**：知乎、百度等簡中站不計入競爭度——那不是同一個市場。
+用網路搜尋的可觀察訊號打分，**每個分附你用的訊號當理由**。
+訊號判讀以繁中（台灣語境）結果為準：知乎、百度等簡中站不計入競爭度——那不是同一個市場。
 
 | 分 | 熱門度 訊號 | 競爭度 訊號 |
 |---|---|---|
@@ -29,4 +12,4 @@ print(json.dumps(research_keywords('<主題>', content_type='youtube'), ensure_a
 | 中 | 長尾但常見用語／幾篇內容 | 幾個對手但切入分散 |
 | 低 | 幾乎搜不到／沒人寫 | 首頁多論壇／UGC／沒人這樣下過 |
 
-**機會分 = 熱門度高 × 競爭度低 × 你能教兌現。** 沒人下過的角度（低競爭缺口）優先卡位。
+沒人下過的角度（低競爭缺口）優先卡位。

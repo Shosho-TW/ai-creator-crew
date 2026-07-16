@@ -1,7 +1,7 @@
 ---
 name: centaur-writer
 description: >
-  「人馬寫作」：作者署名原創文章（部落格、電子報、長文）的口述先行流程。想法的第一次成形永遠發生在作者腦裡，AI 只做攤卡、保序整理、錨定反問、邏輯攻防、查證與除味——絕不代寫論點、結構或聲音。Use whenever 使用者說「我要寫一篇文章」「用我的口述起稿」「跑寫作流程」「把這段口述整理成初稿」「攤卡」「voice draft」，或貼出一段自己講的逐字口述想變成文章——就算使用者說「你先寫一版我再改」，也要觸發本 skill 並改走口述流程（不是拒絕幫忙，是換一種幫法）。Do NOT use for: 教學逐字稿或需要 TA 審稿的課程內容（若裝有 investigative-journalist 用它）、社群短文再製、影片標題發想、單純檢查文字 AI 味（若裝有 slop-watcher 用它）。
+  「人馬寫作」：作者署名原創文章（部落格、電子報、長文）的口述先行流程。想法的第一次成形永遠發生在作者腦裡，AI 只做攤卡、保序整理、錨定反問、邏輯攻防、查證與除味——絕不代寫論點、結構或聲音。Use whenever 使用者說「我要寫一篇文章」「用我的口述起稿」「跑寫作流程」「把這段口述整理成初稿」「攤卡」「voice draft」，或貼出一段自己講的逐字口述想變成文章——就算使用者說「你先寫一版我再改」，也要觸發本 skill 並改走口述流程（不是拒絕幫忙，是換一種幫法）。Do NOT use for: 教學逐字稿或需要審稿流程的課程內容、社群短文再製、影片標題發想、單純檢查文字 AI 味。
 ---
 
 # centaur-writer — 人馬寫作：口述先行的原創文章流程
@@ -84,8 +84,8 @@ Phase 6 查證＋除味  ← 作者說「跑檢核」，AI 讀改好的檔，產
 
 讀作者改好的檔案，然後：
 
-1. **查證**：逐條核對定稿裡的每個數字、研究、引言——標準見 `references/verification-checklist.md`（若裝有 investigative-journalist skill，改用它的 verification-protocol，更完整）。產出查證筆記＋文末來源清單＋「查證後不建議引用」黑名單。
-2. **除味**：檢查 AI 腔與贅詞——若裝有 slop-watcher skill 就跑它的規則與 lint；沒有就用 verification-checklist.md 裡附的基本除味清單，並跑 `scripts/lint_draft.py <定稿路徑>`（純 stdlib：抓 emoji、句尾語助詞過量、驚嘆號堆疊）。作者若有自己累積的「刪改禁止清單」（負片清單），一併過一遍。
+1. **查證**：逐條核對定稿裡的每個數字、研究、引言——標準見 `references/verification-checklist.md`。產出查證筆記＋文末來源清單＋「查證後不建議引用」黑名單。
+2. **除味**：檢查 AI 腔與贅詞——用 verification-checklist.md 裡附的除味清單，並跑 `scripts/lint_draft.py <定稿路徑>`（純 stdlib：抓 emoji、句尾語助詞過量、驚嘆號堆疊）。作者若有自己累積的「刪改禁止清單」（負片清單），一併過一遍。
 3. **交付**：查證筆記與修改建議**存成新檔**到設定檔指定的報告資料夾（檔名、frontmatter、報告結構照 `references/output-conventions.md`；不直接改作者的定稿檔）＋一份「判斷點清單」——需要作者拍板的取捨、【作者】佔位、被標紅的主張。回填草稿檔 frontmatter 的 `verify_report` 與 `stage`（只動記帳欄，不碰正文）。
 
 **完成判準**：報告交付，且每一處建議都附了理由與出處。

@@ -2,7 +2,7 @@
 
 > ⚠️ 全部內容為**示意**：小雲是《張修修的AI創作者新世紀》虛構的示範學員；睡眠科學內容未經查證，示範的是**筆記的形式與流程**，不是醫學事實。每個檔案 frontmatter 都帶 `demo: true`。
 
-這個 vault 由 Liberian Girl plugin 的 Wave 1 六個 skill 建成，對照如下：
+這個 vault 由 Librarian plugin 的六個 skill 建成，對照如下：
 
 | 動作 | Skill | 產物 |
 |---|---|---|

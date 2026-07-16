@@ -1,6 +1,6 @@
 {
   "name": "librarian",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Centaur Zettelkasten for Claude Cowork / Claude Code — capture, ingest, daily review, KB search, and voice-first writing on a plain Markdown vault. 人馬卡片盒：人寫卡與連結，AI 跑腿與備料。",
   "author": "Shosho 張修修",
   "license": "MIT",

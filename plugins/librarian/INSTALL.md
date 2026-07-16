@@ -2,20 +2,29 @@
 
 拿到這個網址的你，只要會做一件事：**把網址交給你的 Claude**。剩下的它會帶你走。
 
-## 最短路徑（推薦）
+## 最短路徑（推薦）：加入市集
 
-1. 打開 Claude 桌面版的 **Cowork** 模式（或 Claude Code）。
-2. 貼上這段話：
+1. 打開 Claude 桌面版的 **Cowork** 模式 → 側欄 **Customize** → **Plugins** → **Add marketplace**。
+2. 貼上市集網址：`https://github.com/Shosho-TW/ai-creator-crew`
+3. 在清單裡找到 **librarian**，按 **Install**。裝完後貼這句話給 Claude：
 
-   > 這是 Librarian 知識庫 plugin 的 repo：{repo 網址}。請讀它的 README，然後一步一步帶我完成安裝和 vault 初始化。
+   > 我剛裝好 librarian plugin，請一步一步帶我完成 vault 初始化。
 
-3. 照 Claude 的指示走。它會讀完文件、告訴你每一步做什麼。
+（用 Claude Code 的人：`/plugin marketplace add Shosho-TW/ai-creator-crew` → `/plugin install librarian@ai-creator-crew`。）
+
+## 替代路徑：把網址交給你的 Claude
+
+貼上這段話：
+
+> 這是 Librarian 知識庫 plugin 的 repo：https://github.com/Shosho-TW/ai-creator-crew 。請讀它的 README，然後一步一步帶我完成安裝和 vault 初始化。
+
+照 Claude 的指示走。它會讀完文件、告訴你每一步做什麼。
 
 ## Claude 會帶你做的事（先知道全貌）
 
 | 步驟 | 誰做 | 說明 |
 |---|---|---|
-| 1. 取得 skill 檔 | Claude | 從 Releases 下載 `.plugin`（整包）或個別 `.skill` 檔 |
+| 1. 取得 skill 檔 | Claude | 從本 repo 的 `skills/` 取得個別 skill（走市集安裝則跳過此步） |
 | 2. 安裝 skill | **你點一下** | 把檔案拖進 Cowork 對話，按「Save skill」——這是安全閘，Claude 不能替你按 |
 | 3. 掛載筆記資料夾 | **你點一下** | 在 Cowork 把你的筆記資料夾（或新資料夾）加進工作區 |
 | 4. 初始化 vault | Claude | 你說「初始化我的知識庫」，librarian-setup 建好整套結構 |

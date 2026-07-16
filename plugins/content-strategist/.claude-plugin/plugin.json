@@ -1,7 +1,7 @@
 {
   "name": "content-strategist",
-  "version": "0.1.0",
-  "description": "內容企劃 Content Strategist — 讓你永遠有下一支能做的題。scout（資訊採集雷達：分級來源地圖＋每日上游掃描進 Inbox）＋ topic-picker（主題挑選器：關鍵字評分→一季題目→三軸排序）。",
+  "version": "0.1.1",
+  "description": "內容企劃 Content Strategist — 讓你永遠有下一支能做的題。scout（資訊採集雷達：分級來源地圖＋每日上游掃描進 Inbox）＋ topic-picker（主題挑選器：關鍵字評分→一季題目→三軸排序）＋ title-first（標題先行：從題目發想標題候選）。",
   "author": "Shosho 張修修",
   "license": "MIT",
   "keywords": ["topic-research", "content-planning", "rss", "creator"]

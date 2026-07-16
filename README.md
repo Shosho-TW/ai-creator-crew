@@ -4,8 +4,8 @@
 
 ## 安裝（一次加入，之後自動更新）
 
-**Claude Cowork**：Customize → Plugins → **Add marketplace** → 貼上本 repo 網址 → 選要僱用的船員按 Install。
-**Claude Code**：`/plugin marketplace add <owner>/ai-creator-crew` → `/plugin install librarian@ai-creator-crew`
+**Claude Cowork**：Customize → Plugins → **Add marketplace** → 貼 `https://github.com/Shosho-TW/ai-creator-crew` → 選要僱用的船員按 Install。
+**Claude Code**：`/plugin marketplace add Shosho-TW/ai-creator-crew` → `/plugin install librarian@ai-creator-crew`
 
 ## 船員名冊
 

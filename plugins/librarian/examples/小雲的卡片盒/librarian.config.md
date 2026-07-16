@@ -6,4 +6,4 @@ reports_folder: Drafts/articles/_reports
 format: md
 demo: true
 ---
-（Liberian Girl 共用設定檔；改設定直接編輯 frontmatter。）
+（Librarian 共用設定檔；改設定直接編輯 frontmatter。）

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "ai-creator-crew",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "張修修《AI 創作者新世紀》的船員市集——每個 plugin 是一位 AI 船員，陪你經營一人媒體公司。One crew member per plugin, for the solo creator.",
   "owner": {
     "name": "Shosho 張修修"

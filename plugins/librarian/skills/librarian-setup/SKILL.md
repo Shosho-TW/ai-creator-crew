@@ -1,7 +1,7 @@
 ---
 name: librarian-setup
 description: >
-  Liberian Girl 知識庫的一次性安裝：在使用者掛載的筆記資料夾（如 Obsidian vault）建立人馬卡片盒的完整骨架——人的上層（Fleeting／Literature／Annotations／Permanent／MOCs）、AI 的下層（Raw／Wiki／index／log，Karpathy 式 LLM wiki）、權限規則 CLAUDE.md、共用設定檔 librarian.config.md、三種筆記範本與寫作草稿區。Use when 使用者說「安裝知識庫」「初始化 vault」「建卡片盒」「librarian setup」「開始用 Liberian Girl」，或其他 Liberian Girl skill（capture／ingest／daily-review／kb-search／centaur-writer）發現 vault 缺 librarian.config.md 需要先初始化時。Do NOT use for: 已初始化 vault 的日常操作。
+  Librarian 知識庫的一次性安裝：在使用者掛載的筆記資料夾（如 Obsidian vault）建立人馬卡片盒的完整骨架——人的上層（Fleeting／Literature／Annotations／Permanent／MOCs）、AI 的下層（Raw／Wiki／index／log，Karpathy 式 LLM wiki）、權限規則 CLAUDE.md、共用設定檔 librarian.config.md、三種筆記範本與寫作草稿區。Use when 使用者說「安裝知識庫」「初始化 vault」「建卡片盒」「librarian setup」「開始用 Librarian」，或其他 Librarian skill（capture／ingest／daily-review／kb-search／centaur-writer）發現 vault 缺 librarian.config.md 需要先初始化時。Do NOT use for: 已初始化 vault 的日常操作。
 ---
 
 # librarian-setup — 建立你的人馬卡片盒
@@ -43,7 +43,7 @@ description: >
 
 ### 3. 寫入 vault 的 CLAUDE.md（權限表＋紅線）
 
-CLAUDE.md 內容固定為：上表的權限標示，加上**五條紅線**（所有 Liberian Girl skill 的單一事實來源，其他 skill 出手前都要讀這份）：
+CLAUDE.md 內容固定為：上表的權限標示，加上**五條紅線**（所有 Librarian skill 的單一事實來源，其他 skill 出手前都要讀這份）：
 
 1. AI 絕不寫 `KB/Permanent/` 的正文與 status；只能維護記帳欄（created／modified／source_refs／aliases）。
 2. AI 寫下的每個事實宣稱都要附來源錨點，能溯回 Raw 或 Annotations。
