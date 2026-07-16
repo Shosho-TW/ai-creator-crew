@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ai-creator-crew",
+  "version": "0.1.0",
+  "description": "張修修《AI 創作者新世紀》的船員市集——每個 plugin 是一位 AI 船員，陪你經營一人媒體公司。One crew member per plugin, for the solo creator.",
+  "owner": {
+    "name": "Shosho 張修修"
+  },
+  "plugins": [
+    {
+      "name": "librarian",
+      "source": "./plugins/librarian",
+      "description": "圖書館員——人馬卡片盒：capture／ingest／daily-review／kb-search／centaur-writer／librarian-setup。人寫卡與連結，AI 跑腿與備料。",
+      "category": "productivity"
+    },
+    {
+      "name": "content-strategist",
+      "source": "./plugins/content-strategist",
+      "description": "內容企劃——scout 資訊採集雷達＋topic-picker 主題挑選器：從上游來源掃描到一整季題目。",
+      "category": "productivity"
+    }
+  ]
+}
