@@ -1,6 +1,6 @@
 # AI Creator Crew 使用教學
 
-> 版本 v0.2.0｜更新 2026-07-15｜對應 plugin：librarian 0.2.0、content-strategist 0.2.0
+> 版本 v0.2.1｜更新 2026-07-15｜對應 plugin：librarian 0.2.1、content-strategist 0.2.0
 
 ## 1. 安裝（一次）
 
@@ -35,7 +35,12 @@
 - 第 2 天起：早上「每日回顧」開 1–2 張卡；讀到好文章就 ingest。
 - 週末：「幫我選題」把下週要做的內容定下來。
 
-## 5. 更多文件
+## 5. 疑難排解
+
+- **剛裝完或更新完，第一次呼叫 skill 出現「Unknown skill」**：skill 註冊需要一點時間。重開一個新對話，或把同一句話再說一次即可。
+- **skill 沒被觸發**：改用直接點名，例如「用 topic-picker 幫我選題」（用 skill 名，不加 plugin 前綴）。
+
+## 6. 更多文件
 
 - 首航逐步教學：[plugins/librarian/docs/first-loop.md](plugins/librarian/docs/first-loop.md)
 - 各工具抓文章的方法：[plugins/librarian/docs/capture-guide.md](plugins/librarian/docs/capture-guide.md)
