@@ -2,6 +2,8 @@
 
 《AI 創作者新世紀》課程的 plugin 市集。**每個 plugin 是一位 AI 船員**——你是總編輯，船員交草稿、你做判斷。
 
+> 版本 v0.2.0｜更新 2026-07-15｜**新手從這裡開始：[使用教學 GUIDE.md](GUIDE.md)**
+
 ## 安裝（一次加入，之後自動更新）
 
 **Claude Cowork**：Customize → Plugins → **Add marketplace** → 貼 `https://github.com/Shosho-TW/ai-creator-crew` → 選要僱用的船員按 Install。
